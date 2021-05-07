@@ -1,0 +1,11 @@
+- hosts: all
+  roles:
+    - timezone
+    - apt-upgrade
+    - packages
+    - dotfiles
+    - emacs
+    - cmigemo
+    - ansible
+    - python
+    - source-highlight
