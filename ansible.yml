@@ -1,0 +1,27 @@
+- hosts: target
+  roles:
+    - ansible
+
+- hosts: target
+  vars:
+    workdir: ~/wks
+  tasks:
+    - file:
+        path: "{{ workdir }}"
+        state: directory
+    - git:
+        repo: "{{ item.repo }}"
+        dest: "{{ item.dest }}"
+      loop:
+        - repo: https://github.com/tateishi/playbook-ansible.git
+          dest: "{{ workdir }}/playbook-ansible"
+        - repo: https://github.com/tateishi/playbook-lvm.git
+          dest: "{{ workdir }}/playbook-lvm"
+        - repo: https://github.com/tateishi/playbook-bind-secondary.git
+          dest: "{{ workdir }}/playbook-bind-secondary"
+        - repo: https://github.com/tateishi/playbook-lxd.git
+          dest: "{{ workdir }}/playbook-lxd"
+        - repo: https://github.com/tateishi/playbook-ledger.git
+          dest: "{{ workdir }}/playbook-ledger"
+        - repo: https://github.com/tateishi/playbook-radio.git
+          dest: "{{ workdir }}/playbook-radio"
