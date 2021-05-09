@@ -15,13 +15,17 @@
       loop:
         - repo: https://github.com/tateishi/playbook-ansible.git
           dest: "{{ workdir }}/playbook-ansible"
-        - repo: https://github.com/tateishi/playbook-lvm.git
-          dest: "{{ workdir }}/playbook-lvm"
         - repo: https://github.com/tateishi/playbook-bind-secondary.git
           dest: "{{ workdir }}/playbook-bind-secondary"
-        - repo: https://github.com/tateishi/playbook-lxd.git
-          dest: "{{ workdir }}/playbook-lxd"
+        - repo: https://github.com/tateishi/playbook-git.git
+          dest: "{{ workdir }}/playbook-git"
+        - repo: https://github.com/tateishi/playbook-jupyter.git
+          dest: "{{ workdir }}/playbook-jupyter"
         - repo: https://github.com/tateishi/playbook-ledger.git
           dest: "{{ workdir }}/playbook-ledger"
+        - repo: https://github.com/tateishi/playbook-lvm.git
+          dest: "{{ workdir }}/playbook-lvm"
+        - repo: https://github.com/tateishi/playbook-lxd.git
+          dest: "{{ workdir }}/playbook-lxd"
         - repo: https://github.com/tateishi/playbook-radio.git
           dest: "{{ workdir }}/playbook-radio"
