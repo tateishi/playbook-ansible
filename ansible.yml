@@ -4,7 +4,7 @@
 
 - hosts: target
   vars:
-    workdir: ~/wks
+    workdir: ~/wks/staging
   tasks:
     - file:
         path: "{{ workdir }}"
