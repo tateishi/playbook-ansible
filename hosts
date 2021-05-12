@@ -1,2 +1,6 @@
-[target]
-ansible
+# -*- mode: yaml -*-
+
+target:
+  hosts:
+    ansible:
+      ansible_connection: local
