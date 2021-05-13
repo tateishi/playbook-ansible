@@ -29,3 +29,5 @@
           dest: "{{ workdir }}/playbook-lxd"
         - repo: https://github.com/tateishi/playbook-radio.git
           dest: "{{ workdir }}/playbook-radio"
+        - repo: https://github.com/tateishi/playbook-work.git
+          dest: "{{ workdir }}/playbook-work"
