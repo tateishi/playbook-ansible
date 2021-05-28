@@ -31,3 +31,5 @@
           dest: "{{ workdir }}/playbook-radio"
         - repo: https://github.com/tateishi/playbook-work.git
           dest: "{{ workdir }}/playbook-work"
+        - repo: https://github.com/tateishi/playbook-www.git
+          dest: "{{ workdir }}/playbook-www"
